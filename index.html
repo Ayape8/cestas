@@ -3,8 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ayape — Lotes de Navidad Gourmet</title>
-  <meta name="description" content="Lotes de Navidad gourmet. 18 productos seleccionados, marcas reconocidas. Entrega en toda España para empresa y particular.">
+  <title>Lotes de Navidad Gourmet para Empresas | Ayape — Pamplona, Navarra</title>
+  <meta name="description" content="Empresa familiar desde 1986 en Pamplona, Navarra. Lotes de Navidad gourmet con 18 productos artesanales seleccionados. Siempre por debajo de 100€. Entrega en toda España.">
+  <meta name="keywords" content="lotes navidad gourmet, cestas navidad empresas, lotes navidad Pamplona, cestas navidad Navarra, lotes navidad artesanales, empresa familiar lotes navidad, cestas gourmet Navarra">
+  <link rel="canonical" href="https://cestas-phi.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cestas-phi.vercel.app/">
+  <meta property="og:title" content="Lotes de Navidad Gourmet | Ayape · Pamplona, Navarra · Desde 1986">
+  <meta property="og:description" content="Empresa familiar desde 1986. 18 productos artesanales seleccionados. Siempre por debajo de 100€. Entrega en toda España.">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lotes de Navidad Gourmet | Ayape · Pamplona, Navarra">
+  <meta name="twitter:description" content="Empresa familiar desde 1986. Lotes gourmet con 18 productos artesanales navarros. Siempre por debajo de 100€.">
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ayape — Lotes de Navidad Gourmet",
+    "description": "Empresa familiar de lotes y cestas de Navidad gourmet desde 1986 en Pamplona, Navarra. Selección artesanal de 18 productos de calidad, siempre por debajo de 100€. Entrega en toda España.",
+    "foundingDate": "1986",
+    "url": "https://cestas-phi.vercel.app/",
+    "email": "info@ayape.es",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pamplona",
+      "addressRegion": "Navarra",
+      "addressCountry": "ES"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "España"
+    },
+    "priceRange": "€€",
+    "keywords": "lotes navidad, cestas navidad, lotes navidad gourmet, cestas navidad empresas, Pamplona, Navarra"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (fragmentos enriquecidos en Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta un lote de Navidad de Ayape?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros lotes de Navidad siempre están por debajo de los 100€ IVA incluido. El precio varía según la personalización y los productos seleccionados. Solicita tu presupuesto sin compromiso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacéis lotes de Navidad para empresas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Ofrecemos lotes de Navidad personalizados para empresas con packaging con tu logo, descuentos por volumen y entrega en toda España. El lote es gasto deducible en el Impuesto de Sociedades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Desde dónde enviáis los lotes de Navidad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Somos una empresa familiar de Pamplona, Navarra, con más de 38 años de experiencia. Enviamos nuestros lotes gourmet a toda España."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué contiene el lote de Navidad de Ayape?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El lote incluye 18 productos gourmet artesanales: confitería navideña, quesos, conservas y selección de bodega. Todas las marcas son reconocidas y de primera calidad, muchas de ellas de Navarra y el norte de España."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
@@ -173,6 +255,17 @@ nav.scrolled{background:var(--green);box-shadow:0 2px 20px rgba(0,0,0,.25)}
 .scroll-hint-arrow{display:flex;gap:3px}
 .scroll-hint-arrow span{width:6px;height:6px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:rotate(45deg);opacity:.7}
 
+/* ─── FAQ ─── */
+.faq-section{background:var(--cream2);padding:5rem 2rem}
+.faq-list{max-width:720px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:1rem}
+.faq-item{background:var(--white);border:1px solid rgba(191,140,48,.18);border-radius:var(--radius);overflow:hidden}
+.faq-q{width:100%;background:none;border:none;padding:1.2rem 1.5rem;text-align:left;font-family:'Lato',sans-serif;font-size:.95rem;font-weight:700;color:var(--green);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-q::after{content:'+';font-size:1.4rem;font-weight:300;color:var(--gold);flex-shrink:0;transition:transform .25s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
+.faq-a p{padding:0 1.5rem 1.2rem;font-size:.88rem;color:var(--muted);line-height:1.75}
+.faq-item.open .faq-a{max-height:200px}
+
 /* ─── COOKIE BANNER ─── */
 .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--green);border-top:2px solid var(--gold);z-index:200;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;transform:translateY(100%);transition:transform .4s ease}
 .cookie-banner.show{transform:none}
@@ -275,10 +368,10 @@ footer span{color:var(--gold);margin:0 .5rem}
   <div class="hero-bg"></div>
   <div class="hero-noise"></div>
   <div class="hero-content">
-    <span class="hero-eyebrow">Selección Gourmet para Compartir</span>
+    <span class="hero-eyebrow">Empresa familiar desde 1986 · Pamplona, Navarra</span>
     <h1 class="hero-title">Lote de Navidad<br><em>Gourmet</em></h1>
     <div class="hero-divider"></div>
-    <p class="hero-sub">18 productos artesanales y de primera calidad. Marcas reconocidas. Entrega personalizada en toda España.</p>
+    <p class="hero-sub">18 productos artesanales y de primera calidad seleccionados en Navarra. Marcas reconocidas. Entrega en toda España para empresa y particular.</p>
     <div class="hero-btns">
       <a href="#confiteria" class="btn-primary">Ver el lote completo</a>
       <a href="#contacto" class="btn-outline">Solicitar presupuesto</a>
@@ -613,6 +706,39 @@ footer span{color:var(--gold);margin:0 .5rem}
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Preguntas frecuentes</span>
+      <h2 class="section-title">Todo lo que necesitas saber</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">¿Cuánto cuesta un lote de Navidad de Ayape?</button>
+        <div class="faq-a"><p>Nuestros lotes de Navidad siempre están por debajo de los 100€ IVA incluido. El precio varía según la personalización y los productos seleccionados. Solicita tu presupuesto sin compromiso a través del formulario de contacto.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Hacéis lotes de Navidad para empresas?</button>
+        <div class="faq-a"><p>Sí. Ofrecemos lotes personalizados para empresas con packaging con tu logo, descuentos por volumen y entrega coordinada en toda España. El lote es gasto deducible en el Impuesto de Sociedades cuando se entrega de forma recurrente.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Desde dónde enviáis los lotes? ¿Llegáis a toda España?</button>
+        <div class="faq-a"><p>Somos una empresa familiar de Pamplona, Navarra, con más de 38 años de experiencia. Enviamos nuestros lotes gourmet a toda la Península. Contáctanos para consultar plazos y condiciones de entrega.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué contiene el lote de Navidad gourmet?</button>
+        <div class="faq-a"><p>El lote incluye 18 productos artesanales: confitería navideña, quesos, conservas y selección de bodega. Todas las marcas son de primera calidad, muchas de ellas de Navarra y el norte de España. Puedes ver el detalle completo en esta misma página.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Puedo personalizar el lote con los productos que quiero?</button>
+        <div class="faq-a"><p>Sí, especialmente para pedidos de empresa. Podemos adaptar la selección de productos, el packaging y el volumen a tus necesidades. Escríbenos y te preparamos una propuesta a medida.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <p>© 2026 <span>AYAPE</span> · Lotes de Navidad Gourmet · Entrega en toda España</p>
@@ -663,6 +789,16 @@ document.querySelectorAll('.prod-grid, .prod-grid--bodega').forEach(grid => {
   grid.parentNode.insertBefore(hint, grid);
   // Ocultar el hint cuando el usuario ya ha deslizado
   grid.addEventListener('scroll', () => { hint.style.opacity = '0'; }, { once: true });
+});
+
+// FAQ acordeón
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
 });
 
 // Cookie banner
