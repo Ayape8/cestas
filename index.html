@@ -159,6 +159,25 @@ footer span{color:var(--gold);margin:0 .5rem}
   .stat:nth-child(odd){border-right:1px solid rgba(0,0,0,.1)!important}
   .precio-box{padding:2rem 2rem}
   .nav-logo{font-size:1.3rem}
+
+  /* Scroll horizontal en grids de productos */
+  .prod-grid,.prod-grid--bodega{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    gap:1rem;
+    padding-bottom:1rem;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+  }
+  .prod-grid::-webkit-scrollbar,.prod-grid--bodega::-webkit-scrollbar{height:4px}
+  .prod-grid::-webkit-scrollbar-track,.prod-grid--bodega::-webkit-scrollbar-track{background:var(--cream2);border-radius:2px}
+  .prod-grid::-webkit-scrollbar-thumb,.prod-grid--bodega::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+  .prod-grid .prod-card,.prod-grid--bodega .prod-card{
+    flex:0 0 160px;
+    scroll-snap-align:start;
+  }
+  .prod-card--big{flex:0 0 160px!important}
 }
 </style>
 </head>
