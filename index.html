@@ -45,6 +45,55 @@
   }
   </script>
 
+  <!-- JSON-LD: Product (rich snippets precio y disponibilidad) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Lote de Navidad Gourmet Ayape",
+    "description": "Lote de Navidad artesanal con más de 18 productos gourmet seleccionados: confitería, quesos, conservas y bodega. Empresa familiar de Pamplona, Navarra, desde 1986.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Ayape"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "maxPrice": "100",
+        "priceCurrency": "EUR"
+      },
+      "availability": "https://schema.org/PreOrder",
+      "validFrom": "2026-09-01",
+      "validThrough": "2026-12-24",
+      "seller": {
+        "@type": "Organization",
+        "name": "Ayape — Lotes de Navidad Gourmet"
+      },
+      "areaServed": "ES",
+      "description": "Precio siempre por debajo de 100€ IVA incluido. Personalización con logo de empresa sin coste adicional."
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Número de productos",
+        "value": "18+"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Origen",
+        "value": "Pamplona, Navarra, España"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Deducibilidad fiscal",
+        "value": "Gasto deducible en el Impuesto de Sociedades"
+      }
+    ]
+  }
+  </script>
+
   <!-- JSON-LD: FAQPage (fragmentos enriquecidos en Google) -->
   <script type="application/ld+json">
   {
@@ -369,7 +418,7 @@ footer span{color:var(--gold);margin:0 .5rem}
   <div class="hero-noise"></div>
   <div class="hero-content">
     <span class="hero-eyebrow">Empresa familiar desde 1986 · Pamplona, Navarra</span>
-    <h1 class="hero-title">Lote de Navidad<br><em>Gourmet</em></h1>
+    <h1 class="hero-title">Lotes de Navidad<br><em>Gourmet</em> para Empresas</h1>
     <div class="hero-divider"></div>
     <p class="hero-sub">18 productos artesanales y de primera calidad seleccionados en Navarra. Marcas reconocidas. Entrega en toda España para empresa y particular.</p>
     <div class="hero-btns">
